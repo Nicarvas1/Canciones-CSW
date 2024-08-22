@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar Canciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="song-form">
+            <h2>Guardar Canción</h2>
+            <label for="name">Nombre de la Canción:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="artist">Artista:</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <label for="duration">Duración (min:seg):</label>
+            <input type="text" id="duration" name="duration" required>
+
+            <label for="year">Año:</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="image">Imagen de la Canción:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Guardar Canción</button>
+        </form>
+
+        <div class="song-list">
+            <h2>Lista de Canciones</h2>
+            <input type="text" id="search" placeholder="Buscar canción por nombre...">
+            <div class="songs-container" id="songs-container">
+                <!-- Aquí se añadirán las canciones -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
